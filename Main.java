@@ -4,8 +4,15 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Welcome to Employee\n" +
+        System.out.println("Welcome to Employee" +
                 "Wage Computation");
+
+        int isPresent=(int)(Math.random()*10)%2;
+        if(isPresent==1)
+            System.out.println("Employee is Present");
+        else
+            System.out.println("Employee is absent");
+
 
 
     }
