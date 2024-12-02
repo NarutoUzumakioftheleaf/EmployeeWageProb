@@ -3,7 +3,11 @@ public class CalculateWage {
     static int hours_per_day = 8;   // Make static
 
     public static void calcWage(int isPresent) {
-        int wage_per_day = isPresent * wage_per_hour * hours_per_day;
+        if(isPresent==2)
+            hours_per_day=4;
+        else if(isPresent==0)
+            hours_per_day=0;
+        int wage_per_day = wage_per_hour * hours_per_day;
         System.out.println("Wage per day is: " + wage_per_day);
     }
 }
