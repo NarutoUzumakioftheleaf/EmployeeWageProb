@@ -7,14 +7,8 @@ public class Main {
         System.out.println("Welcome to Employee" +
                 "Wage Computation");
 
-        int isPresent=(int)(Math.random()*10)%3;
-        switch(isPresent){
-            case 0-> System.out.println("Employee is absent") ;
-            case 1-> System.out.println("Employee is present full Time");
-            case 2-> System.out.println("Employee is present part-time");
-            default-> System.out.println("Something wrong!");
-        }
-        CalculateWage.calcWage(isPresent);//as calcWage is defined static so no need to do instance method
+
+        CalculateWage.calcWage();//as calcWage is defined static so no need to do instance method
 
 
 
