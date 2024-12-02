@@ -12,6 +12,7 @@ public class Main {
             System.out.println("Employee is Present");
         else
             System.out.println("Employee is absent");
+        CalculateWage.calcWage(isPresent);//as calcWage is defined static so no need to do instance method
 
 
 
