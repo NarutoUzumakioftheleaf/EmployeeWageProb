@@ -1,16 +1,14 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Welcome to Employee" +
-                "Wage Computation");
+        System.out.println("Welcome to Employee Wage Computation");
 
+        // Compute wage for Company A
+        CalculateWage.calcWage("Company A", 20, 100, 20);
 
-        CalculateWage.calcWage();//as calcWage is defined static so no need to do instance method
+        // Compute wage for Company B
+        CalculateWage.calcWage("Company B", 25, 120, 22);
 
-
-
+        // Compute wage for Company C
+        CalculateWage.calcWage("Company C", 30, 90, 18);
     }
 }
